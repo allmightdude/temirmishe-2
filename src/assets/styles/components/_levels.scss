@@ -1,0 +1,81 @@
+.level {
+  position: relative;
+  padding: 1.5rem 3rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  &:hover &__number {
+    border: 4px solid $color-primary;
+    background-color: $color-secondary;
+    transition: 0.3s all ease;
+    color: white;
+  }
+
+  .block__content {
+    padding: 1rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 3rem;
+    }
+  }
+
+  &__icon {
+  }
+
+  &__number {
+    background-color: $color-primary;
+    color: $color-secondary;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 4px solid $color-secondary;
+
+    @media only screen and (max-width: $bp-large) {
+      top: 0%;
+      right: 50%;
+      transform: translate(50%, 0);
+    }
+  }
+}
+
+.levels {
+  display: flex;
+  align-items: center;
+
+  .banner {
+    background-image: url(../images/haireservice3.jpg);
+    @include backgroundImage;
+    padding: 6rem 10rem;
+    border-radius: 4px;
+    position: relative;
+    margin: 0 1rem;
+    box-shadow: $shadow-1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#000, 0.5);
+      top: 0;
+      border-radius: 4px;
+      z-index: 9;
+    }
+  }
+}
+
+.z-10 {
+  position: relative;
+  z-index: 10;
+}

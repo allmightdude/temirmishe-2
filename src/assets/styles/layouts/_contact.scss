@@ -1,0 +1,39 @@
+.contact {
+  &__number {
+    .level__number {
+      right: 50%;
+      top: 0;
+      transform: translate(50%, 0);
+    }
+
+    .level {
+      svg {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin: 2rem 0;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+
+      .block__content {
+        padding: 3rem;
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    .form__label {
+      text-align: right !important;
+    }
+
+    .form__input,
+    .form__textarea {
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.banner {
+  padding: 15rem 10rem;
+  text-align: center;
+  background-color: $color-primary;
+  height: 100%;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__content {
+    position: absolute;
+    text-align: center;
+    @include absCenter;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  p {
+    width: 70%;
+    font-size: 1.6rem;
+  }
+
+  &__svg {
+    position: absolute;
+    @include absCenter;
+    width: 100%;
+  }
+
+  .big-logo {
+  }
+}
+
+.big-logo {
+  width: 10rem;
+  height: 10rem;
+
+  img {
+    width: 100%;
+  }
+}
