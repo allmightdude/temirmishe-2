@@ -31,6 +31,7 @@ export default defineConfig({
       "@": path.resolve("src"),
       "@helper": path.resolve("src/assets/helpers"),
       "@style": path.resolve("src/assets/styles"),
+      "@public": path.resolve("src/assets/styles"),
     },
   },
 });
