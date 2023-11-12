@@ -1,35 +1,36 @@
-.footer{
-    position: relative;
-    &__link{
-        color: white;
+.footer {
+  position: relative;
+  &__link {
+    color: white;
+  }
+
+  &__section {
+    margin: 0 auto;
+    color: white;
+    font-size: 1.4rem;
+    text-align: right;
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 2rem 0;
     }
 
-    &__section{
-        margin: 0 auto; ;
-        color: white;
-        font-size: 1.4rem;
-        text-align: right;
-
-        @media only screen and (max-width : $bp-large) {
-            margin: 2rem 0;
-        }
-
-        h4{
-            margin-bottom: 1rem;
-        }
+    h4 {
+      margin-bottom: 1rem;
     }
+  }
 
-    &__logo{
-        color: white;
-        align-self: start !important;
-        justify-self: flex-start;
+  &__logo {
+    color: white;
+    align-self: start !important;
+    justify-self: flex-start;
 
-        .big-logo{
-            margin-bottom: 3rem;
-        }
+    .big-logo {
+      margin-bottom: 3rem;
     }
+  }
 }
 
-html , body{
-    transition: 1.5s all ease;
+html,
+body {
+  transition: 1.5s all ease;
 }
