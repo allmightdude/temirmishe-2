@@ -173,24 +173,15 @@ aside {
       background-color: transparent;
       outline: none;
       border: none;
-      color: $color-primary;
-    }
-    .owl-next {
-      // margin-left: -3rem;
-    }
-    .owl-prev {
-      margin-left: 3rem;
     }
 
-    .owl-next {
+    .owl-prev {
+      margin-left: 3rem;
     }
   }
 
   .infoPannel {
     padding: 5rem 4rem;
-
-    &__list {
-    }
 
     &__item {
       padding: 0.5rem 0;

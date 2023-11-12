@@ -1,19 +1,19 @@
 @font-face {
   font-family: "iranYekan";
-  src: url("../css/fonts/eot/iranyekanwebregular.eot");
+  src: url("public/fonts/eot/iranyekanwebregular.eot");
   src: url("IRANSansWeb.eot?#iefix") format("embedded-opentype"),
-    url("../css/fonts/woff/iranyekanwebregular.woff") format("woff"),
-    url("../css/fonts/ttf/iranyekanwebregular.ttf") format("truetype");
+    url("public/fonts/woff/iranyekanwebregular.woff") format("woff"),
+    url("public/fonts/ttf/iranyekanwebregular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "iranYekan";
-  src: url("../css/fonts/eot/iranyekanweblight.eot");
+  src: url("public/fonts/eot/iranyekanweblight.eot");
   src: url("iranyekanweblight.eot?#iefix") format("embedded-opentype"),
-    url("../css/fonts/woff/iranyekanweblight.woff") format("woff"),
-    url("../css/fonts/ttf/iranyekanweblight.ttf") format("truetype");
+    url("public/fonts/woff/iranyekanweblight.woff") format("woff"),
+    url("public/fonts/ttf/iranyekanweblight.ttf") format("truetype");
   font-style: normal;
   font-weight: light;
 }
@@ -84,8 +84,8 @@ body {
 }
 
 ::selection {
-  background-color: $color-primary;
-  color: white;
+  background-color: $color-primary-1;
+  color: $color-secondary-1;
 }
 
 .bullet {
