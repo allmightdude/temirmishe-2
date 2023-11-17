@@ -1,110 +1,106 @@
-
 *,
 ::before,
-::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 // Breakpoints
-$bp-largest : 62.5em; //1000px
-$bp-large : 50em; //800px
-$bp-medium : 37.5em; //600px
+$bp-largest: 62.5em; //1000px
+$bp-large: 50em; //800px
+$bp-medium: 37.5em; //600px
 
+html {
+  font-size: 62.5%; //1rem = 10px
 
-html{
-    font-size: 62.5%; //1rem = 10px
-
-    @media only screen and (max-width : $bp-largest) {
-        font-size: 56.25%; // 1rem  = 8px
-    }
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%; // 1rem  = 8px
+  }
 }
 
-body{
-    box-sizing: border-box;
-    direction: rtl;
+body {
+  box-sizing: border-box;
+  direction: rtl;
 
-    @media only screen and (max-width : $bp-largest) {
-    }
-    
+  @media only screen and (max-width: $bp-largest) {
+  }
 }
 
-p{
+p {
 }
 
-
-ul , li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-input{
-    border: none;
+input {
+  border: none;
 
-    &:focus{
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }
 
-.container{
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $bp-largest) {
+    max-width: 100rem;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+
+  &::before,
+  &::after {
+  }
+}
+
+.col-12 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-9 {
+  width: 66.666%;
+  float: left;
+
+  @media only screen and (max-width: $bp-large) {
     width: 100%;
-    max-width: 120rem;
-    margin: 0 auto;
-
-    @media only screen and (max-width : $bp-largest) {
-        max-width: 100rem;
-    }
+  }
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 2rem;
+.col-6 {
+  width: 50%;
+  float: left;
 
-    &::before,
-    &::after{
-
-    }
-}
-
-.col-12{
+  @media only screen and (max-width: $bp-large) {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  }
 }
 
-.col-9{
-    width: 66.666%;
-    float: left;
+.col-3 {
+  width: 32%;
+  float: left;
+  margin: 0 0.5%;
 
-    @media only screen and (max-width : $bp-large) {
-        width: 100%;
-    }
+  @media only screen and (max-width: $bp-large) {
+    width: 100%;
+  }
 }
 
-.col-6{
-    width: 50%;
-    float: left;
-
-    @media only screen and (max-width : $bp-large) {
-        width: 100%;
-    }
-}
-
-.col-3{
-    width: 32%;
-    float: left;
-    margin: 0 .5%; 
-
-    @media only screen and (max-width : $bp-large) {
-        width: 100%;
-    }
-}
-
-.section{
-    padding: 10rem 0;
+.section {
+  padding: 10rem 0;
 }

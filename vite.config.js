@@ -1,28 +1,37 @@
 import { defineConfig } from "vite";
-import path from "path";
 
-console.log(__dirname);
+import path from "path";
 
 export default defineConfig({
   root: "src",
-  base: "src",
+  base: "/src",
   publicDir: "src/public",
+
+  server: {
+    watch: {
+      usePolling: true,
+    },
+  },
+
   css: {
     preprocessorOptions: {
       scss: {
         additionalData: `
-@import "/assets/styles/main.scss";
-`,
+        @import "@/assets/styles/abstracts/_variables.scss";
+        @import "@/assets/styles/abstracts/_mixins.scss";
+        @import "@/assets/styles/abstracts/_functions.scss";
+        `,
       },
     },
   },
-
   resolve: {
     alias: {
       "~": path.resolve("src"),
       "~~": path.resolve("src"),
       "@": path.resolve("src"),
       "@helper": path.resolve("src/assets/helpers"),
+      "@style": path.resolve("src/assets/styles"),
+      "@public": path.resolve("src/assets/styles"),
     },
   },
 });
