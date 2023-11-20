@@ -1,0 +1,13 @@
+$directions: top, bottom, right, left;
+
+@mixin margin-maker($size: 100, $raise: 5) {
+  @for $i from 1 through calc($size/$raise) {
+    $value: $i * $raise;
+
+    @each $direction in $directions {
+      .m#{str-slice($direction, 0, 1)}#{$value} {
+        margin-#{$direction}: #{$value}px !important;
+      }
+    }
+  }
+}
