@@ -9,3 +9,41 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/**
+    * Flex Justify Content
+    * *********************************/
+$justifyContents: start, end, space-between, space-around, space-evenly, stretch;
+
+@mixin make-justify($size: null) {
+  @each $current-justify in $justifyContents {
+    @if ($size) {
+      .justify-#{$size}-#{$current-justify} {
+        justify-content: $current-justify;
+      }
+    } @else {
+      .justify-#{$current-justify} {
+        justify-content: $current-justify;
+      }
+    }
+  }
+}
+
+/**
+        * Flex Align Items
+        * *********************************/
+$aligns: start, end, center, baseline, stretch;
+
+@mixin make-align($size: null) {
+  @each $current-align in $aligns {
+    @if ($size) {
+      .align-#{$size}-#{$current-align} {
+        align-items: $current-align;
+      }
+    } @else {
+      .align-#{$current-align} {
+        align-items: $current-align;
+      }
+    }
+  }
+}

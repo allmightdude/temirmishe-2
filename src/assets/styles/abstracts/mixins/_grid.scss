@@ -1,0 +1,15 @@
+$columns: 12;
+
+@mixin column-maker($size) {
+  @for $i from 0 through $columns {
+    @if $i > 0 {
+      .col-#{$size}-#{$i} {
+        flex: 0 0 calc(100% / 12) * $i;
+        max-width: calc(100% / 12) * $i;
+      }
+    }
+    .offset-#{$size}-#{$i} {
+      margin-left: calc(100% / 12) * $i;
+    }
+  }
+}

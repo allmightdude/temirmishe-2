@@ -1,0 +1,27 @@
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@include column-maker(xl);
+
+@media only screen and (max-width: "1200px") {
+  @include column-maker(lg);
+}
+
+@media only screen and (max-width: "992px") {
+  @include column-maker(md);
+}
+
+@media only screen and (max-width: "768px") {
+  @include column-maker(sm);
+}
+
+@media only screen and (max-width: "480px") {
+  @include column-maker(xs);
+}

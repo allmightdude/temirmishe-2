@@ -2,20 +2,14 @@
   color: white;
 
   &__top {
-    height: 5rem;
     background-color: $color-secondary;
-    display: flex;
-    align-items: center;
   }
 
-  &__top-numbers {
-    margin-left: auto;
+  &__top--numbers {
+    padding: 1rem 0;
 
-    span {
-      border-left: 1px solid #fff;
-      border-right: 1px solid #fff;
-      margin-left: 0.5rem;
-      padding: 0 1rem;
+    &-item{
+      margin: 1rem;
     }
   }
 
@@ -39,7 +33,7 @@
     display: flex;
     align-items: center;
 
-    @media only screen and (max-width : $bp-medium) {
+    @media only screen and (max-width: $bp-medium) {
       display: none;
     }
   }
