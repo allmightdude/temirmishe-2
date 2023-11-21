@@ -1,13 +1,13 @@
 .bg-primary {
-  background-color: $color-primary;
+  background-color: color("primary" , "base");
 }
 
 .bg-secondary {
-  background-color: $color-secondary;
+  background-color: color("secondary" , "base");
 }
 
 .bg-light {
-  background-color: $color-light-1;
+  background-color:color("white" , "darken-1");
 }
 
 @include margin-maker();

@@ -1,0 +1,35 @@
+.card {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0, 3px;
+  @include radius(12px);
+
+  &__title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: color("secondary", "base");
+    font-weight: 600;
+
+    @media #{$lg-down} {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__content {
+    padding: 26px;
+  }
+
+  &__header {
+    padding: 20px 22px 0;
+  }
+
+  &__footer {
+    border-top: 1px solid color("shades", "divider");
+    padding: 26px 30px 28px;
+  }
+
+  &--outline {
+    border: 1px solid color("white", "darken-2");
+  }
+}

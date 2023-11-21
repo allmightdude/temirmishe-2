@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  background-color: $color-secondary;
+  background-color: color("secondary" , "base");
   &__link {
     color: white;
   }

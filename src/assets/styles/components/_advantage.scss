@@ -16,7 +16,7 @@
     }
 
     &:hover {
-      box-shadow: $shadow-1;
+      box-shadow: $depth-1;
     }
   }
 
@@ -24,7 +24,7 @@
   }
 
   &__link {
-    color: $color-secondary;
+    color: color("secondary" , "base");
     margin-right: 1.5rem;
   }
 

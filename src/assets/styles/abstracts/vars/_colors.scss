@@ -1,10 +1,61 @@
-$color-primary: #f9ca24;
-$color-primary-1: #ffeaa7;
-$color-secondary: #222f3e;
-$color-secondary-1: #3f4b58;
+$primary: (
+  "base": #efce56,
+  "lighten-1": #e7cd6f,
+  "lighten-2": #e4d084,
+  "lighten-3": #eaddb1,
+);
 
-$color-light-1: #f6f6f6;
-$color-alt-white: #fff;
+$secondary: (
+  "base": #3f4b58,
+  "lighten-1": #4e5a67,
+  "lighten-2": #667280,
+  "lighten-3": #8b9aaa,
+);
 
-$shadow-1: 0 0.2rem 1rem rgba(#000, 0.095);
-$transparent: transparent;
+$secondary: (
+  "base": #3f4b58,
+  "lighten-1": #4e5a67,
+  "lighten-2": #667280,
+  "lighten-3": #8b9aaa,
+);
+
+$white: (
+  "base": #ffffff,
+  "darken-1": #f6f6f6,
+  "darken-2": #f3ebeb,
+  "darken-3": #f7eded,
+);
+
+$alts: (
+  "green": #43bb55,
+  "green-light": #5dcc6d,
+  "orange": #ffa556,
+  "orange-light": #ffbf87,
+  "blue": #4ebdda,
+  "blue-light": #69c9d6,
+  "red": #fa7876,
+  "red-light": #ff9391,
+  "magenta": #3f51b5,
+  "magenta-light": #5164ce,
+);
+
+$shades: (
+  "black": #000000,
+  "divider": #ebedf2,
+  "transparent": transparent,
+  "error": #ff6666,
+  "focus": #f9fafe,
+  "hover": #e7eaf4,
+  "active": #99a0b8,
+  "input": #edf2f8,
+);
+
+/**** Init Colors *********
+*
+**************************/
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "white": $white,
+  "shades": $shades,
+);

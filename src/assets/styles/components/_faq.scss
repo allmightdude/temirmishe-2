@@ -1,16 +1,16 @@
 .faq {
   &__item {
     padding: 2rem 4rem;
-    background-color: $color-light-1;
+    background-color:color("white" , "darken-1");
     margin-top: 1.5rem;
     border-radius: 4px;
-    box-shadow: $shadow-1;
+    box-shadow: $depth-1;
     font-family: 1.1rem !important;
-    border-top: 3px solid $color-secondary;
+    border-top: 3px solid color("secondary" , "base");
     cursor: pointer;
 
     &.active {
-      border-top: 3px solid $color-primary;
+      border-top: 3px solid color("primary" , "base");
     }
   }
 
@@ -27,6 +27,6 @@
   }
 
   &__question {
-    color: $color-secondary;
+    color: color("secondary" , "base");
   }
 }

@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>مرکز تخصصی تعمیرات ماشین لباسشویی</title>
 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,6 +32,7 @@
                 <div class="row">
                     <div class="col col-xl-6">
                         <div class="nav__top--numbers">
+
                             <span class="nav__top--numbers-item">۰۹۳۶۹۲۳۶۴۲۰</span>
 
                             <span class="nav__top--numbers-item">۰۹۳۶۹۲۳۶۴۲۰</span>
@@ -216,7 +218,7 @@
     <section class="home-header">
         <div class="container align-xl-center justify-xl-center">
             <div class="row ">
-                <div class="col-6">
+                <div class="col col-xl-6 col-md-12 offset-xl-2 offset-md-0">
                     <div class="heading-main">
                         <h1 class="heading-1">
                             نمایندگی مجاز تعمیرات لباسشویی
@@ -235,22 +237,58 @@
                     </div>
                 </div>
 
-                <div class="col-6">
-                    <div class="ctPanel home-header__contact">
-                        <h3 class="heading-1 text-secondary">همین الان درخواست خود را اطلاع دهید</h3>
+                <div class="col col-xl-4 col-md-6">
+                    <div class="card home-header__contact">
+                        <div class="card__header">
+                            <h3 class="text-secondary card__title">همین الان درخواست خود را اطلاع دهید</h3>
+                        </div>
 
-                        <form class="form">
-                            <label for="fullname" class="form__label">نام و نام خانوادگی</label>
-                            <input type="text" name="fullName" class="form__input">
+                        <div class="card__content">
+                            <form class="form">
+                                <div class="col col-xl-12">
+                                    <div class="control">
+                                        <label class="control__label">نام و نام خانوادگی</label>
 
-                            <label for="phoneNumber" class="form__label">شماره تماس</label>
-                            <input type="text" name="phoneNumber" class="form__input">
+                                        <div class="control__field">
+                                            <div class="control__wrapper">
+                                                <input type="text" class="control__input" placeholder="وارد کنید...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <label for="description" class="form__label">توضیحات</label>
-                            <textarea name="description" class="form__textarea form__input"></textarea>
+                                <div class="col col-xl-12">
+                                    <div class="control">
+                                        <label class="control__label">شماره تماس</label>
 
-                            <a type="submit" class="btn btn--primary" onclick="submitForm(event)"> ارسال</a>
-                        </form>
+                                        <div class="control__field">
+                                            <div class="control__wrapper">
+                                                <input type="number" class="control__input" placeholder="وارد کنید...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-xl-12">
+                                    <div class="control">
+                                        <label class="control__label">توضیحات</label>
+
+                                        <div class="control__field">
+                                            <div class="control__wrapper">
+                                                <input type="number" class="control__input" placeholder="وارد کنید...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col">
+                                    <div class="control">
+                                        <a type="submit" class="btn btn--primary" onclick="submitForm(event)"> ارسال</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -379,24 +417,26 @@
 
                         <div class="wrapper">
                             <div class="reviewPannel__item text-center">
-
                                 <div class="reviewPannel__stars mt10">
                                     <svg class="star-icon">
                                         <use xlink:href="images/sprite.svg#icon-star1"></use>
                                     </svg>
+
                                     <svg class="star-icon">
                                         <use xlink:href="images/sprite.svg#icon-star1"></use>
                                     </svg>
+
                                     <svg class="star-icon">
                                         <use xlink:href="images/sprite.svg#icon-star1"></use>
                                     </svg>
-                                    <svg class="star-o-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
-                                    </svg>
+
                                     <svg class="star-o-icon">
                                         <use xlink:href="images/sprite.svg#icon-star_outline"></use>
                                     </svg>
 
+                                    <svg class="star-o-icon">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
                                 </div>
 
                                 <p class="mt10">

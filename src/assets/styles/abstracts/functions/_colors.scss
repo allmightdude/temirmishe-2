@@ -1,0 +1,11 @@
+@function color($color, $type) {
+  @if map-has-key($colors, $color) {
+    $current_color: map-get($colors, $color);
+    @if map-has-key($current_color, $type) {
+      @return map-get($current_color, $type);
+    }
+  }
+
+  @warn "Unknown `#{$color}` - `#{$type}` in $colors.";
+  @return null;
+}

@@ -17,8 +17,9 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-        @import "@/assets/styles/abstracts/vars/_main.scss";
-        @import "@/assets/styles/abstracts/mixins/_main.scss";
+        @import "@/assets/styles/abstracts/vars/main.scss";
+        @import "@/assets/styles/abstracts/mixins/main.scss";
+        @import "@/assets/styles/abstracts/functions/main.scss";
         `,
       },
     },
@@ -31,6 +32,7 @@ export default defineConfig({
       "@helper": path.resolve("src/assets/helpers"),
       "@style": path.resolve("src/assets/styles"),
       "@public": path.resolve("src/assets/styles"),
+      "@component": path.resolve("src/assets/components"),
     },
   },
 });

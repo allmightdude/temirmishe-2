@@ -1,7 +1,7 @@
 .btn {
   border-radius: 4px;
   padding: 0.5rem 2rem;
-  color: $color-light-1;
+  color:color("white" , "darken-1");
   cursor: pointer;
   white-space: nowrap;
   position: relative;
@@ -64,6 +64,11 @@
     @include no-select;
   }
 
-  @include btn-maker(primary, $color-primary, $color-primary, #fff);
-  @include btn-maker(secnodary, $color-secondary, $color-secondary-1, #fff);
+  @include btn-maker(
+    primary,
+    color("primary", "base"),
+    color("primary", "base"),
+    #fff
+  );
+  @include btn-maker(secnodary, color("secondary" , "base"), color("primary" , "lighten-1"), #fff);
 }
