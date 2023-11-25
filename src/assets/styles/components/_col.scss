@@ -6,22 +6,26 @@
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+
+  @include max-width(md){
+    background-color: red;
+  }
 }
 
-@include column-maker(xl);
+// @include column-maker(xl);
 
-@media only screen and (max-width: "1200px") {
-  @include column-maker(lg);
-}
+// @include max-width(lg) {
+//   @include column-maker(lg);
+// }
 
-@media only screen and (max-width: "992px") {
-  @include column-maker(md);
-}
+// @include max-width(md) {
+//   @include column-maker(md);
+// }
 
-@media only screen and (max-width: "768px") {
-  @include column-maker(sm);
-}
+// @include max-width(sm) {
+//   @include column-maker(sm);
+// }
 
-@media only screen and (max-width: "480px") {
-  @include column-maker(xs);
-}
+// @include max-width(xs) {
+//   @include column-maker(xs);
+// }

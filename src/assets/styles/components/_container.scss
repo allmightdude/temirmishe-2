@@ -5,15 +5,15 @@
   margin-left: auto;
   max-width: $container-width-xl;
 
-  @media #{$lg-down} {
+  @include max-width(lg) {
     max-width: $container-width-lg;
   }
 
-  @media #{$md-down} {
+  @include max-width($md) {
     max-width: $container-width-md;
   }
 
-  @media #{$sm-down} {
+  @include max-width($sm) {
     max-width: $container-width-sm;
   }
 

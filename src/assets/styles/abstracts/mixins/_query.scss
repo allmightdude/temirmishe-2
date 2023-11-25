@@ -1,0 +1,37 @@
+@mixin max-width($size: map-get($breakpoints, xs)) {
+  @if (map-has-key($breakpoints, $size)) {
+    @media only screen and (max-width: map-get($breakpoints , $size) - 1) {
+      @content;
+    }
+  }
+}
+
+@mixin min-width($size: map-get($breakpoints, xs)) {
+  @if (map-has-key($breakpoints, $size)) {
+    @media only screen and (min-width: map-get($breakpoints , $size) - 1) {
+      @content;
+    }
+  }
+}
+
+@mixin only-device($size: map-get($breakpoints, xs)) {
+  @if (map-has-key($breakpoints, $size)) {
+    $breakpoints-length: length($breakpoints);
+    $list: map-keys($breakpoints);
+
+    @if index($map-list, $size) == $breakpoints-length {
+      @include min-width($size) {
+        @content;
+      }
+    } @else {
+      $next-size-index: index($map-list, $size) + 1;
+      $next-size-key: nth($breakpoints, $next-size0-index);
+
+      @media only screen and (min-width: map-get($breakpoints , $size)) and (max-width: map-get($breakpoints , $next-size-key) - 1) {
+        @content;
+      }
+      // https://enmascript.com/articles/2018/09/28/another-approach-to-media-queries-with-sass
+      // https://www.freecodecamp.org/news/learn-flexbox-build-5-layouts/
+    }
+  }
+}

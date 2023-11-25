@@ -1,11 +1,10 @@
-/**
- * Breakpoints
- * *********************************/
-$breakpoint-xl: 14.6rem;
-$breakpoint-lg: 120rem;
-$breakpoint-md: 99.2rem;
-$breakpoint-sm: 76.8rem;
-$breakpoint-xs: 48rem;
+$breakpoints: (
+  "xl": 14.6rem,
+  "lg": 120rem,
+  "md": 99.2rem,
+  "sm": 76.8rem,
+  "xs": 48rem,
+);
 
 /**
     * Container
