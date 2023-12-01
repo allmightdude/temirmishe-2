@@ -2,7 +2,7 @@
   display: block;
   position: relative;
   background-color: #fff;
-  box-shadow: 0, 3px;
+  box-shadow: $depth-1;
   @include radius(12px);
 
   &__title {

@@ -1,13 +1,17 @@
 $directions: top, bottom, left, right;
 
 @mixin padding-maker($size: 50, $raise: 5) {
-  @for $i from 1 through raise($size/$raise) {
-    $value: $i * $increment;
+  @for $i from 1 through calc($size / $raise) {
+    $value: $i * $raise;
 
     @each $direction in $directions {
       .p#{str-slice($direction, 0, 1)}#{$value} {
         padding-#{$direction}: #{$value}px !important;
       }
+    }
+
+    .p#{$value} {
+      padding: #{$value}px !important;
     }
   }
 }

@@ -14,7 +14,7 @@
   }
 }
 
-@mixin only-device($size: map-get($breakpoints, xs)) {
+@mixin only-width($size: map-get($breakpoints, xs)) {
   @if (map-has-key($breakpoints, $size)) {
     $breakpoints-length: length($breakpoints);
     $list: map-keys($breakpoints);

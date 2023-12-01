@@ -6,9 +6,18 @@
   color: white;
   padding: 10rem 0;
 
+  @include max-width(sm) {
+    text-align: center;
+  }
+
   &__contact {
     max-width: 35rem;
-    @media only screen and (max-width: $bp-large) {
+
+    @include max-width(md) {
+      margin-top: 4rem;
+    }
+
+    @include max-width(sm) {
       display: none;
     }
   }
@@ -37,36 +46,27 @@
   }
 }
 
-.home-about {
-  svg {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  .block__content {
-    display: grid;
-    align-items: center;
-
-    grid-template-columns: min-content minmax(min-content, 30rem);
-    grid-column-gap: 2rem;
-
-    grid-template-rows: repeat(2, min-content);
-
-    @media only screen and (max-width: $bp-medium) {
-      display: inline;
-    }
-
-    svg {
-      grid-row: 1 / -1;
-    }
-  }
-}
-
 .home-reviews {
   .banner-holder {
     @media only screen and (max-width: $bp-large) {
       display: none;
     }
+  }
+}
+
+.prons {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__item-icon {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  &__item-info {
   }
 }
 
@@ -118,4 +118,31 @@
       }
     }
   }
+}
+
+.comment {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  &__item {
+    @include flexCenter;
+    flex-direction: column;
+    box-shadow: $depth-1;
+    padding: 3rem 5rem;
+    margin: 5px;
+    border-radius: 12px;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: color("primary", "base");
+}
+
+.swiper-pagination {
+  margin-top: 10re m;
+}
+
+.swiper-wrapper {
+  min-height: 260px;
 }

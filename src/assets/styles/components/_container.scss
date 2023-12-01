@@ -9,11 +9,11 @@
     max-width: $container-width-lg;
   }
 
-  @include max-width($md) {
+  @include max-width(md) {
     max-width: $container-width-md;
   }
 
-  @include max-width($sm) {
+  @include max-width(sm) {
     max-width: $container-width-sm;
   }
 

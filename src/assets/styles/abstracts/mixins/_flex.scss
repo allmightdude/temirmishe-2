@@ -1,0 +1,190 @@
+/**
+    * Flex
+    * *********************************/
+@mixin make-flex($size: map-get($breakpoints, xl)) {
+  @if (map-has-key($breakpoints, $size)) {
+    .d-#{$size}-flex {
+      display: flex !important;
+    }
+    .d-#{$size}-inline-flex {
+      display: inline-flex !important;
+    }
+  }
+
+  .d-flex {
+    display: flex !important;
+  }
+
+  .d-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+/**
+    * Flex Directions
+    * *********************************/
+$directions: row, row-reverse, column, column-reverse;
+
+@mixin make-direction($size: map-get($breakpoints, xl)) {
+  @each $current-direction in $directions {
+    @if (map-has-key($breakpoints)) {
+      .flex-#{$size}-#{$current-direction} {
+        justify-content: $current-direction;
+      }
+    }
+
+    .flex-#{$current-direction} {
+      justify-content: $current-direction;
+    }
+  }
+}
+
+/**
+    * Flex Align Self
+    * *********************************/
+$selfs: start, end, center, baseline, auto, stretch;
+
+@mixin make-self($size: map-get($breakpoints, xl)) {
+  @each $current-self in $selfs {
+    @if (map-has-key($breakpoints, $size)) {
+      .align-self-#{$size}-#{$current-self} {
+        align-self: #{$current-self};
+      }
+    }
+
+    .align-self-#{$current-self} {
+      align-self: #{$current-self};
+    }
+  }
+}
+
+/**
+    * Flex Wrap
+    * *********************************/
+$wraps: nowrap, wrap, wrap-reverse;
+
+@mixin make-wrap($size: map-get($breakpoints, xl)) {
+  @each $current-wrap in $wraps {
+    @if (map-has-key($breakpoints, $size)) {
+      .flex-#{$size}-#{$current-wrap} {
+        flex-wrap: #{$current-wrap};
+      }
+    }
+
+    .flex-#{$current-wrap} {
+      flex-wrap: #{$current-wrap};
+    }
+  }
+}
+
+/**
+    * Flex Order
+    * *********************************/
+$orders: 12;
+
+@mixin make-order($size: null) {
+  @if ($size) {
+    .order-#{$size}-first {
+      order: -1;
+    }
+    .order-#{$size}-last {
+      order: 13;
+    }
+  } @else {
+    .order-first {
+      order: -1;
+    }
+    .order-last {
+      order: 13;
+    }
+  }
+
+  @for $i from 0 through $orders {
+    @if ($size) {
+      .order-#{$size}-#{$i} {
+        order: $i;
+      }
+    } @else {
+      .order-#{$i} {
+        order: $i;
+      }
+    }
+  }
+}
+
+/**
+    * Flex Align Content
+    * *********************************/
+$contents: start, end, space-between, space-around, space-evenly, stretch;
+
+@mixin make-content($size: null) {
+  @each $current-content in $contents {
+    @if ($size) {
+      .align-content-#{$size}-#{$current-content} {
+        align-content: #{$current-content};
+      }
+    } @else {
+      .align-content-#{$current-content} {
+        align-content: #{$current-content};
+      }
+    }
+  }
+}
+
+/**
+    * Flex Grow and Shrink
+    * *********************************/
+$shrinks: 1;
+$items: grow, shrink;
+@mixin make-resize($size: null) {
+  @each $item in $items {
+    @for $i from 0 through $shrinks {
+      @if ($size) {
+        .flex-#{$item}-#{$size}-#{$i} {
+          flex-#{$item}: #{$i};
+        }
+      } @else {
+        .flex-#{$item}-#{$i} {
+          flex-#{$item}: #{$i};
+        }
+      }
+    }
+  }
+}
+
+/**
+        * Flex Shorthand
+        * *********************************/
+@mixin flex-shorthand($size: null) {
+  @if ($size) {
+    .flex-#{$size}-fill {
+      flex: 1 1 auto;
+    }
+  } @else {
+    .flex-fill {
+      flex: 1 1 auto;
+    }
+  }
+
+  @for $i from 0 through 1 {
+    @for $j from 0 through 1 {
+      @if ($size) {
+        .flex-#{$size}-#{$i}-#{$j} {
+          flex: #{$i} #{$j} auto;
+        }
+
+        .flex-#{$size}-#{$i}-#{$j}-100 {
+          flex: #{$i} #{$j} 100%;
+        }
+      } @else {
+        .flex-#{$i}-#{$j} {
+          flex: #{$i} #{$j} auto;
+        }
+
+        .flex-#{$i}-#{$j}-100 {
+          flex: #{$i} #{$j} 100%;
+        }
+      }
+    }
+  }
+}

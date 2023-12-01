@@ -20,19 +20,21 @@
         integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link href="image/icons/AniTamir1.png" rel="shortcut icon" />
 
 </head>
 
 <body>
 
+    <!-- START NAVBAR -->
     <div class="nav">
         <div class="nav__top">
             <div class="container">
-                <div class="row">
+                <div class="row row--no-gutter">
                     <div class="col col-xl-6">
                         <div class="nav__top--numbers">
-
                             <span class="nav__top--numbers-item">۰۹۳۶۹۲۳۶۴۲۰</span>
 
                             <span class="nav__top--numbers-item">۰۹۳۶۹۲۳۶۴۲۰</span>
@@ -60,43 +62,48 @@
 
         <div class="nav__bottom">
             <div class="container">
-                <div class="row">
-                    <ul class="nav__menu">
-                        <li class="nav__menu-item">
-                            <a href="" class="nav__link">صفحه اصلی</a>
-                        </li>
-                        <li class="nav__menu-item">
-                            <a href="" class="nav__link">نمایندگی ها</a>
-                        </li>
-                        <li class="nav__menu-item">
-                            <a href="" class="nav__link">مقالات </a>
-                        </li>
-                        <li class="nav__menu-item">
-                            <a href="" class="nav__link">تماس با ما</a>
-                        </li>
+                <div class="row row--no-gutter">
+                    <div class="col col-xl-8">
+                        <ul class="nav__menu">
+                            <li class="nav__menu-item">
+                                <a href="" class="nav__link">صفحه اصلی</a>
+                            </li>
+                            <li class="nav__menu-item">
+                                <a href="" class="nav__link">نمایندگی ها</a>
+                            </li>
+                            <li class="nav__menu-item">
+                                <a href="" class="nav__link">مقالات </a>
+                            </li>
+                            <li class="nav__menu-item">
+                                <a href="" class="nav__link">تماس با ما</a>
+                            </li>
 
-                    </ul>
+                            <li class="nav__menu-item">
+                                <a href="./contact.html" class="btn btn--primary">گزارش تعمیر </a>
+                            </li>
+                        </ul>
 
-                    <a href="./contact.html" class="btn bg-orange btn-contact">گزارش تعمیر </a>
-
-
-                    <div class="nav__logo">
-                        <img src="public/images/Anitamir-logo2.png" alt="">
                     </div>
 
-                    <div class="menu-icon">
-                        <svg>
-                            <use xlink:href="public/images/sprite.svg#icon-menu"></use>
-                        </svg>
+                    <div class="col col-xl-4">
+                        <div class="nav__logo float-left">
+                            <img src="public/images/Anitamir-logo2.png" alt="">
+                        </div>
+
+                        <div class="menu-icon">
+                            <svg>
+                                <use xlink:href="public/images/sprite.svg#icon-menu"></use>
+                            </svg>
+                        </div>
                     </div>
-
-
-
                 </div>
             </div>
         </div>
     </div>
+    <!-- END NAVBAR -->
 
+
+    <!-- START SIDENAV -->
     <div class="sidenav">
 
         <div class="close-icon">
@@ -206,6 +213,9 @@
         </div>
 
     </div>
+    <!-- END SIDENAV -->
+
+
     <!-- 
 <div class="popuop-flash ">
     درخواست شما ارسال شد. در اjlسرع وقت با شما تماس گرفته می شود.
@@ -216,9 +226,9 @@
 </div> -->
 
     <section class="home-header">
-        <div class="container align-xl-center justify-xl-center">
-            <div class="row ">
-                <div class="col col-xl-6 col-md-12 offset-xl-2 offset-md-0">
+        <div class="container align-center justify-center">
+            <div class="row align-center">
+                <div class="col col-xl-6 col-sm-12">
                     <div class="heading-main">
                         <h1 class="heading-1">
                             نمایندگی مجاز تعمیرات لباسشویی
@@ -237,8 +247,8 @@
                     </div>
                 </div>
 
-                <div class="col col-xl-6 col-md-6">
-                    <div class="card home-header__contact mt40">
+                <div class="col col-xl-6 col-sm-12 justify-center">
+                    <div class="card home-header__contact margin-x-auto">
                         <div class="card__header">
                             <h3 class="text-secondary card__title">همین الان درخواست خود را اطلاع دهید</h3>
                         </div>
@@ -295,14 +305,16 @@
         </div>
     </section>
 
-    <section class="section home-about">
+    <section class="prons p50">
         <div class="container">
             <div class="row">
-                <div class="col col-xl-6 col-md-12">
-                    <h2 class="heading-2 hbf">
+                <div class="col col-xl-12">
+                    <h2 class="heading-2 text-center">
                         آنی تعمیر ، تعمیر لباسشویی در منزل
                     </h2>
+                </div>
 
+                <div class="col col-xl-6 col-sm-12">
                     <div class="img-fluid mt10">
                         <img src="public/images/samsungservice.png" alt="">
                         <div class="img-fluid--addon">
@@ -311,50 +323,65 @@
                     </div>
                 </div>
 
-                <div class="col col-xl-6 col-md-12">
-                    <div class="block pd-2 mt10">
-                        <div class="block__content">
-                            <svg class="clock-icon">
-                                <use xlink:href="public/images/sprite.svg#icon-speedometer"></use>
-                            </svg>
+                <div class="col col-xl-6 col-sm-12">
+                    <div class="card">
+                        <div class="card__content">
+                            <div class="prons__item">
+                                <svg class="prons__item-icon clock-icon">
+                                    <use xlink:href="public/images/sprite.svg#icon-speedometer"></use>
+                                </svg>
 
-                            <h4 class="block__title">
-                                سرعت در تعمیرات
-                            </h4>
-                            <p>تکنسین های ما طبق برنامه شما در دسترس هستند!
-                                برای تعیین قرار ملاقات راحت از قبل تماس بگیرید.</p>
+                                <div class="prons__item-info">
+                                    <h4>
+                                        سرعت در تعمیرات
+                                    </h4>
+                                    <p>تکنسین های ما طبق برنامه شما در دسترس هستند!
+                                        برای تعیین قرار ملاقات راحت از قبل تماس بگیرید.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
+                    <div class="card mt10">
+                        <div class="card__content">
+                            <div class="prons__item">
+                                <svg class="prons__item-icon clock-icon">
+                                    <use xlink:href="public/images/sprite.svg#icon-high_quality"></use>
+                                </svg>
 
-                    <div class="block pd-2 mt10">
-                        <div class="block__content">
-                            <svg class="hq-icon">
-                                <use xlink:href="public/images/sprite.svg#icon-high_quality"></use>
-                            </svg>
+                                <div class="prons__item-info">
+                                    <h4>
+                                        بهترین کیفیت
 
-                            <h4 class="block__title">
-                                بهترین کیفیت
-                            </h4>
-                            <p>تکنسین های ما بهترین خدمات و با کیفیت ترین خدمات
-                                را به شما ارائه می دهند.</p>
+                                    </h4>
+                                    <p>تکنسین های ما بهترین خدمات و با کیفیت ترین خدمات
+                                        را به شما ارائه می دهند.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
+                    <div class="card mt10">
+                        <div class="card__content">
+                            <div class="prons__item">
+                                <svg class="prons__item-icon clock-icon">
+                                    <use xlink:href="public/images/sprite.svg#icon-credit-card"></use>
+                                </svg>
 
-                    <div class="block pd-2 mt10">
-                        <div class="block__content">
-                            <svg class="credit-card-icon">
-                                <use xlink:href="public/images/sprite.svg#icon-credit-card"></use>
-                            </svg>
+                                <div class="prons__item-info">
+                                    <h4>
+                                        قیمت گذاری اولیه
+                                    </h4>
+                                    <p>تکنسین های ما طبق برنامه شما در دسترس هستند!
+                                        برای تعیین قرار ملاقات راحت از قبل تماس بگیرید.</p>
+                                </div>
+                            </div>
 
-                            <h4 class="block__title">
-                                قیمت گذاری اولیه
-                            </h4>
-                            <p>تکنسین های ما طبق برنامه شما در دسترس هستند!
-                                برای تعیین قرار ملاقات راحت از قبل تماس بگیرید.</p>
                         </div>
                     </div>
+
                     <a href="" class="btn btn--secnodary mt10">همین الان با ما تماس بگیرید </a>
 
                 </div>
@@ -364,7 +391,7 @@
 
     <section class="section home-representation">
         <div class="container">
-            <div class="row fl-c">
+            <div class="row">
                 <h2 class="heading-2 hbg text-center">نمایندگی مجاز تعمیرات لباسشویی در منزل در تهران </h2>
 
                 <div class="representation mt10">
@@ -394,127 +421,134 @@
         </div>
     </section>
 
-    <section class="section home-reviews">
+    <section class="p30">
         <div class="container">
             <div class="row">
-                <div class="col-6 banner-holder">
-                    <div class="banner">
-                        <div class="banner__content">
-                            <h2 class="heading-2 mt10">وظیفه ی ما</h2>
-                            <p class="mt10">ارائه ی بهترین خدمات به مشتریان!
-                                خدماتی که باعث شود ما را به دوستان خود هم معرفی کنند.</p>
-
-                            <img src="public/images/Ellipse 4.svg" alt="" class="banner__svg">
-
-
-                        </div>
-                    </div>
+                <div class="col">
+                    <h2 class="heading-2 text-center">
+                        نظرات مشتریان
+                    </h2>
                 </div>
 
-                <div class="col-6">
-                    <div class="reviewPannel bg-grey text-center">
+                <div class="col col-xl-12">
+                    <div class="swiper comment">
                         <!-- <h3 class="heading-3">مشتریان ما چه می گویند</h3> -->
 
-                        <div class="wrapper">
-                            <div class="reviewPannel__item text-center">
-                                <div class="reviewPannel__stars mt10">
-                                    <svg class="star-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star1"></use>
-                                    </svg>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide text-center">
+                                <div class="comment__item">
+                                    <div class="comment__stars">
+                                        <svg class="star-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star1"></use>
+                                        </svg>
 
-                                    <svg class="star-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star1"></use>
-                                    </svg>
+                                        <svg class="star-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star1"></use>
+                                        </svg>
 
-                                    <svg class="star-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star1"></use>
-                                    </svg>
+                                        <svg class="star-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star1"></use>
+                                        </svg>
 
-                                    <svg class="star-o-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
-                                    </svg>
+                                        <svg class="star-o-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
 
-                                    <svg class="star-o-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
-                                    </svg>
-                                </div>
+                                        <svg class="star-o-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                    </div>
 
-                                <p class="mt10">
-                                    نه این که آرزو کنم بیشتر وسایلم خراب شوند، اما اگر این کار را بکنند آنقدر ناراحت نمی
-                                    شوم
-                                    زیرا می دانم با چه کسی تماس بگیرم!
-                                </p>
+                                    <p class="mt10">
+                                        نه این که آرزو کنم بیشتر وسایلم خراب شوند، اما اگر این کار را بکنند آنقدر ناراحت
+                                        نمی
+                                        شوم
+                                        زیرا می دانم با چه کسی تماس بگیرم!
+                                    </p>
 
-                                <div class="reviewPannel__name mt10">
-                                    جعفرپناهی
-                                </div>
-                            </div>
-                            <div class="reviewPannel__item text-center">
-
-                                <div class="reviewPannel__stars mt10">
-                                    <svg class="star-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star1"></use>
-                                    </svg>
-                                    <svg class="star-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star1"></use>
-                                    </svg>
-                                    <svg class="star-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star1"></use>
-                                    </svg>
-                                    <svg class="star-o-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
-                                    </svg>
-                                    <svg class="star-o-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
-                                    </svg>
-
-                                </div>
-
-                                <p class="mt10">
-                                    نه این که آرزو کنم بیشتر وسایلم خراب شوند، اما اگر این کار را بکنند آنقدر ناراحت نمی
-                                    شوم
-                                    زیرا می دانم با چه کسی تماس بگیرم!
-                                </p>
-
-                                <div class="reviewPannel__name mt10">
-                                    جعفرپناهی
+                                    <h3 class="heading-4" class=" mt10">
+                                        جعفرپناهی
+                                    </h3>
                                 </div>
                             </div>
-                            <div class="reviewPannel__item text-center">
 
-                                <div class="reviewPannel__stars mt10">
-                                    <svg class="star-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star1"></use>
-                                    </svg>
-                                    <svg class="star-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star1"></use>
-                                    </svg>
-                                    <svg class="star-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star1"></use>
-                                    </svg>
-                                    <svg class="star-o-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
-                                    </svg>
-                                    <svg class="star-o-icon">
-                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
-                                    </svg>
+                            <div class="swiper-slide text-center">
+                                <div class="comment__item">
+                                    <div class="comment__stars">
+                                        <svg class="star-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star1"></use>
+                                        </svg>
 
+                                        <svg class="star-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star1"></use>
+                                        </svg>
+
+                                        <svg class="star-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star1"></use>
+                                        </svg>
+
+                                        <svg class="star-o-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+
+                                        <svg class="star-o-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="mt10">
+                                        نه این که آرزو کنم بیشتر وسایلم خراب شوند، اما اگر این کار را بکنند آنقدر ناراحت
+                                        نمی
+                                        شوم
+                                        زیرا می دانم با چه کسی تماس بگیرم!
+                                    </p>
+
+                                    <h3 class="heading-4" class=" mt10">
+                                        جعفرپناهی
+                                    </h3>
                                 </div>
+                            </div>
 
-                                <p class="mt10">
-                                    نه این که آرزو کنم بیشتر وسایلم خراب شوند، اما اگر این کار را بکنند آنقدر ناراحت نمی
-                                    شوم
-                                    زیرا می دانم با چه کسی تماس بگیرم!
-                                </p>
+                            <div class="swiper-slide text-center">
+                                <div class="comment__item">
+                                    <div class="comment__stars">
+                                        <svg class="star-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star1"></use>
+                                        </svg>
 
-                                <div class="reviewPannel__name mt10">
-                                    جعفرپناهی
+                                        <svg class="star-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star1"></use>
+                                        </svg>
+
+                                        <svg class="star-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star1"></use>
+                                        </svg>
+
+                                        <svg class="star-o-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+
+                                        <svg class="star-o-icon">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                    </div>
+
+                                    <p class="mt10">
+                                        نه این که آرزو کنم بیشتر وسایلم خراب شوند، اما اگر این کار را بکنند آنقدر ناراحت
+                                        نمی
+                                        شوم
+                                        زیرا می دانم با چه کسی تماس بگیرم!
+                                    </p>
+
+                                    <h3 class="heading-4" class=" mt10">
+                                        جعفرپناهی
+                                    </h3>
                                 </div>
                             </div>
 
                         </div>
 
-
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -523,84 +557,94 @@
 
     <section class="home-advantage">
         <div class="container">
-
             <div class="row">
-                <div class="col-12">
-                    <h2 class="heading-2 hbf">
+                <div class="col col-xl-12">
+                    <h2 class="heading-2 text-center">
                         آنی تعمیر ، تعمیر لباسشویی در منزل
                     </h2>
                 </div>
 
-                <div class="col-6">
-                    <div class="img-fluid mt10">
-                        <img src="public/images/repairwash4.png" alt="">
-                        <div class="img-fluid--addon">
-                            همین حالا تماس بگیرید
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
+                <div class="col col-xl-6">
                     <div class="advantage mt10">
                         <div class="advantage__item">
-                            <svg class="hq-icon">
-                                <use xlink:href="images/sprite.svg#icon-high_quality"></use>
-                            </svg>
-                            <a href="" class="advantage__link">
-                                کارشناسان واجد شرایط
-                            </a>
+                            <div class="advantage__item-title">
+                                <h4 class="heading-4">
+                                    کارشناسان واجد شرایط
+                                </h4>
+                            </div>
+
+                            <p class="advantage__item-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            </p>
+                        </div>
+
+
+                        <div class="advantage__item">
+                            <div class="advantage__item-title">
+                                <h4 class="heading-4">
+                                    گارانتی کار و قطعات
+                                </h4>
+                            </div>
+
+                            <p class="advantage__item-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            </p>
+                        </div>
+
+
+                        <div class="advantage__item">
+                            <div class="advantage__item-title">
+                                <h4 class="heading-4"> پیش بینی قیمت
+                                </h4>
+                            </div>
+
+                            <p class="advantage__item-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            </p>
                         </div>
 
                         <div class="advantage__item">
-                            <svg class="receipt-icon">
-                                <use xlink:href="images/sprite.svg#icon-receipt_long"></use>
-                            </svg>
-                            <a href="" class="advantage__link">
-                                گارانتی کار و قطعات
-                            </a>
+                            <div class="advantage__item-title">
+                                <h4 class="heading-4 p5">
+                                    تکنسین های مودب
+                                </h4>
+                            </div>
+
+                            <p class="advantage__item-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            </p>
                         </div>
 
                         <div class="advantage__item">
-                            <svg class="credit-card-icon">
-                                <use xlink:href="images/sprite.svg#icon-credit-card"></use>
-                            </svg>
-                            <a href="" class="advantage__link">
-                                پیش بینی قیمت
-                            </a>
+                            <div class="advantage__item-title">
+                                <h4 class="heading-4 p5">
+                                    خدمات طبق برنامه شما
+                                </h4>
+                            </div>
+
+                            <p class="advantage__item-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            </p>
                         </div>
 
                         <div class="advantage__item">
-                            <svg class="happy-icon">
-                                <use xlink:href="images/sprite.svg#icon-happy"></use>
-                            </svg>
-                            <a href="" class="advantage__link">
-                                تکنسین های مودب
-                            </a>
+                            <div class="advantage__item-title">
+                                <h4 class="heading-4 p5">
+                                    در دسترس بودن
+                                </h4>
+                            </div>
+
+                            <p class="advantage__item-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            </p>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="advantage__item">
-                            <svg class="calendar-icon">
-                                <use xlink:href="images/sprite.svg#icon-calendar"></use>
-                            </svg>
-                            <a href="" class="advantage__link">
-                                خدمات طبق برنامه شما
-                            </a>
-                        </div>
+                <div class="col col-xl-6">
+                    <div class="flex-col-center margin-y-auto">
+                        <img src="public/images/repairwash4.png" alt="">
 
-                        <div class="advantage__item">
-                            <svg class="thumb-up-icon">
-                                <use xlink:href="images/sprite.svg#icon-thumb_up"></use>
-                            </svg>
-                            <a href="" class="advantage__link">
-                                در دسترس بودن
-                            </a>
-                        </div>
-
-
-
+                        <a href="" class="btn btn--secnodary mt10">همین الان با ما تماس بگیرید </a>
 
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -1007,7 +1051,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script type="module" src="main.js"></script>
+
 </body>
 
 </html>

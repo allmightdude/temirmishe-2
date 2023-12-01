@@ -1,0 +1,55 @@
+@include make-justify();
+@include make-justify(xl);
+
+@media only screen and (max-width: "1200px") {
+  @include make-justify(lg);
+}
+
+@media only screen and (max-width: "992px") {
+  @include make-justify(md);
+}
+
+@media only screen and (max-width: "768px") {
+  @include make-justify(sm);
+}
+
+@media only screen and (max-width: "480px") {
+  @include make-justify(xs);
+}
+
+// Make Align Items
+@include make-align();
+@include make-align(xl);
+
+@media only screen and (max-width: "1200px") {
+  @include make-align(lg);
+}
+
+@media only screen and (max-width: "992px") {
+  @include make-align(md);
+}
+
+@media only screen and (max-width: "768px") {
+  @include make-align(sm);
+}
+
+@media only screen and (max-width: "480px") {
+  @include make-align(xs);
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.flex-col-center {
+  @include flexCenter;
+  flex-direction: column;
+}
+
+.flex-row-center {
+  @include flexCenter;
+}

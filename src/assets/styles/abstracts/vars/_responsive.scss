@@ -1,16 +1,10 @@
-// /* Between */
-// $only-xl: "only screen and (min-width: #{$breakpoint-lg}) and (max-width: #{$breakpoint-xl - 1})";
-// $only-lg: "only screen and (min-width: #{$breakpoint-md}) and (max-width: #{$breakpoint-lg - 1})";
-// $only-md: "only screen and (min-width: #{$breakpoint-sm}) and (max-width: #{$breakpoint-md - 1})";
-// $only-sm: "only screen and (min-width: #{$breakpoint-xs}) and (max-width: #{$breakpoint-sm - 1})";
-
-// /* Mobile point */
+/* Mobile point */
 // $mobile: $sm-down;
 // $desktop: $sm-up;
 
-// /* Custom size */
-// $size: "";
+/* Custom size */
+$size: "";
 
-// @mixin point($value) {
-//   $size: "only screen and (max-width: #{$value})" !global;
-// }
+@mixin point($value) {
+  $size: "only screen and (max-width: #{$value})" !global;
+}

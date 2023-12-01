@@ -1,31 +1,27 @@
 .advantage {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-
   &__item {
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    padding: 0.5rem 2rem;
-    transition: 0.3s all ease;
-    cursor: pointer;
 
     &:not(:first-child) {
       margin-top: 1rem;
     }
 
-    &:hover {
-      box-shadow: $depth-1;
+    &-title {
+      border-right: 4px solid color("primary", "lighten-3");
+      padding: 0 1rem;
+    }
+
+    &-text{
+      margin-right: 1rem;
     }
   }
 
   &__icon {
+    background-color: red;
   }
 
   &__link {
-    color: color("secondary" , "base");
-    margin-right: 1.5rem;
+    color: color("secondary", "base");
+    margin-right: 2rem;
   }
 
   svg {
@@ -37,5 +33,9 @@
   .hq-icon {
     width: 5rem;
     height: 5rem;
+  }
+
+  &__img{
+    background-color: red;
   }
 }
