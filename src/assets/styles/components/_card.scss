@@ -11,7 +11,7 @@
     color: color("secondary", "base");
     font-weight: 600;
 
-    @media #{$lg-down} {
+    @include max-width(lg) {
       font-size: 1.6rem;
     }
   }

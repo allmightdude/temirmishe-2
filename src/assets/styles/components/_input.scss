@@ -2,7 +2,7 @@
   margin-bottom: 2.3rem;
   position: relative;
 
-  @media #{$xs-down} {
+  @include max-width(xs) {
     margin-bottom: 1.2rem;
   }
 
