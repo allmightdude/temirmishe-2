@@ -1,33 +1,33 @@
-$directions: top, bottom, right, left;
+$marginDirections: top, bottom;
 
-@mixin margin-maker($size: 100, $raise: 5) {
-  @for $i from 1 through calc($size/$raise) {
-    $value: $i * $raise;
+@mixin margin-maker($size: 100, $increment: 10) {
+  @for $i from 1 through calc($size/$increment) {
+    $value: $i * $increment;
 
-    @each $direction in $directions {
-      .m#{str-slice($direction, 0, 1)}#{$value} {
+    @each $direction in $marginDirections {
+      .m#{str-slice($direction , 0 , 1)}#{$value} {
         margin-#{$direction}: #{$value}px !important;
       }
     }
   }
+}
 
-  .margin-x-auto {
-    margin: 0 auto;
-  }
+.margin-x-auto {
+  margin: 0 auto;
+}
 
-  .margin-y-auto {
-    margin: auto 0;
-  }
+.margin-y-auto {
+  margin: auto 0;
+}
 
-  .margin-auto {
-    margin: auto;
-  }
+.margin-auto {
+  margin: auto;
+}
 
-  .margin-r-auto {
-    margin-right: auto;
-  }
+.margin-r-auto {
+  margin-right: auto;
+}
 
-  .margin-l-auto {
-    margin-left: auto;
-  }
+.margin-l-auto {
+  margin-left: auto;
 }

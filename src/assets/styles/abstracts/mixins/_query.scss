@@ -1,6 +1,6 @@
 @mixin max-width($size: map-get($breakpoints, xs)) {
   @if (map-has-key($breakpoints, $size)) {
-    @media only screen and (max-width: map-get($breakpoints , $size) - 1) {
+    @media only screen and (max-width: map-get($breakpoints , $size)) {
       @content;
     }
   }
@@ -8,7 +8,7 @@
 
 @mixin min-width($size: map-get($breakpoints, xs)) {
   @if (map-has-key($breakpoints, $size)) {
-    @media only screen and (min-width: map-get($breakpoints , $size) - 1) {
+    @media only screen and (min-width: map-get($breakpoints , $size)) {
       @content;
     }
   }

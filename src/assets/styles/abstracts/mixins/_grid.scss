@@ -9,7 +9,7 @@ $columns: 12;
       }
     }
     .offset-#{$size}-#{$i} {
-      margin-left: calc(100% / 12) * $i;
+      margin-right: calc(100% / 12) * $i;
     }
   }
 }

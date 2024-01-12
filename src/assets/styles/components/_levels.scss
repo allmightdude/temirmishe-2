@@ -73,6 +73,14 @@
       z-index: 9;
     }
   }
+
+  &__logo{
+    width: 10rem;
+  }
+
+  &__info{
+    background-color: red;
+  }
 }
 
 .z-10 {

@@ -1,6 +1,2 @@
-@include max-width(xl) {
-  @include make-flex(xl);
-  @include make-direction(xl);
-  @include make-self(xl);
-  @include make-wrap(xl);
-}
+@include clearfix;
+

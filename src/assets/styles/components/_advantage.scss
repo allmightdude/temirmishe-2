@@ -1,16 +1,25 @@
 .advantage {
   &__item {
+    margin-top: 3rem;
 
-    &:not(:first-child) {
+    @include max-width(sm) {
+      text-align: center;
+      box-shadow: $depth-1;
       margin-top: 1rem;
+      padding: 1rem;
     }
+
+    @include radius(4px);
 
     &-title {
-      border-right: 4px solid color("primary", "lighten-3");
       padding: 0 1rem;
+
+      @include max-width(sm) {
+        border: none;
+      }
     }
 
-    &-text{
+    &-text {
       margin-right: 1rem;
     }
   }
@@ -35,7 +44,7 @@
     height: 5rem;
   }
 
-  &__img{
+  &__img {
     background-color: red;
   }
 }

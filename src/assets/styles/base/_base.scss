@@ -22,22 +22,124 @@ body {
   }
 }
 
-p {
+/**
+ * Reset
+ * *********************************/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
 }
 
-ul,
-li {
-  list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
-a {
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+figure {
+  margin: 0;
+}
+
+p,
+pre {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  font-weight: inherit;
+}
+
+label,
+span {
+  font-weight: inherit;
+}
+
+/**
+ * Form Elements
+ * *********************************/
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  -webkit-tap-highlight-color: color("shades", "transparent");
+}
+
+/**
+ * Links
+ * *********************************/
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
 }
 
-input {
-  border: none;
-
-  &:focus {
-    outline: none;
-  }
+a {
+  cursor: pointer;
+  color: inherit;
 }

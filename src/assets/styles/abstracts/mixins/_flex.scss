@@ -2,31 +2,18 @@
     * Flex
     * *********************************/
 @mixin make-flex($size: map-get($breakpoints, xl)) {
-  @if (map-has-key($breakpoints, $size)) {
-    .d-#{$size}-flex {
-      display: flex !important;
-    }
-    .d-#{$size}-inline-flex {
-      display: inline-flex !important;
-    }
-  }
-
   .d-flex {
-    display: flex !important;
-  }
-
-  .d-inline-flex {
-    display: inline-flex !important;
+    background-color: blue;
   }
 }
 
 /**
     * Flex Directions
     * *********************************/
-$directions: row, row-reverse, column, column-reverse;
+$flexDirections: row, row-reverse, column, column-reverse;
 
 @mixin make-direction($size: map-get($breakpoints, xl)) {
-  @each $current-direction in $directions {
+  @each $current-direction in $flexDirections {
     @if (map-has-key($breakpoints)) {
       .flex-#{$size}-#{$current-direction} {
         justify-content: $current-direction;
