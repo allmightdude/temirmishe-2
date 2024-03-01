@@ -1,13 +1,4 @@
 .representation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  z-index: 10;
-  margin: 0 auto;
-  width: 100%;
-  overflow: hidden;
-
   &__item {
     border-radius: 50%;
     width: 18rem;
@@ -18,54 +9,15 @@
     justify-content: center;
     padding: 1rem;
     background-color: white;
-
-    display: grid;
   }
 
-  &__img {
-    width: 100%;
-    object-fit: cover;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
   }
 
-  .owl-nav {
-    position: absolute;
-    right: 0;
-    width: 100%;
+  .heading-2{
+    position: relative;
     z-index: 100;
-    display: none;
-
-    .owl-next,
-    .owl-prev {
-      color: white;
-      font-size: 4rem;
-      background-color: transparent;
-      outline: none;
-      border: none;
-      position: relative;
-    }
-
-    .owl-next {
-      position: absolute;
-      left: 0;
-    }
   }
-}
-
-.owl-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.owl-stage-outer {
-  position: relative;
-  z-index: 160;
-  overflow: hidden;
-  display: flex;
-}
-
-.owl-stage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

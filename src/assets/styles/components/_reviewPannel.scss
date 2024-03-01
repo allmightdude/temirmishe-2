@@ -1,7 +1,7 @@
 .reviewPannel {
   padding: 15rem 10rem;
 
-  @media only screen and (max-width: $bp-large) {
+  @include max-width(sm) {
     padding: 10rem 5rem;
   }
 }

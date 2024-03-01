@@ -1,27 +1,58 @@
 /**
     * Flex
     * *********************************/
+
 @mixin make-flex($size: map-get($breakpoints, xl)) {
+  @if (map-has-key($breakpoints, $size)) {
+    .d-#{$size}-flex {
+      display: flex;
+    }
+
+    .d-#{$size}-inline-flex {
+      display: flex;
+    }
+  }
   .d-flex {
-    background-color: blue;
+    display: flex;
+  }
+
+  .d-inline-flex {
+    display: flex;
+  }
+}
+
+$flexDirections: row, row-reverse, column, column-reveerse;
+
+@mixin make-direction($size: map-get($breakpoints, xl)) {
+  @each $current-direction in $flexDirections {
+    @if (map-has-key($breakpoints, $size)) {
+      .flex-#{$size}-#{$current-direction} {
+        flex-direction: #{$current-direction};
+      }
+    }
+
+    .flex-#{$current-direction} {
+      flex-direction: #{$current-direction};
+    }
   }
 }
 
 /**
     * Flex Directions
     * *********************************/
-$flexDirections: row, row-reverse, column, column-reverse;
+$flexJustifies: stretch, space-between, space-evenly, space-around, center,
+  start, end, flex-start, flex-end, left, right;
 
-@mixin make-direction($size: map-get($breakpoints, xl)) {
-  @each $current-direction in $flexDirections {
-    @if (map-has-key($breakpoints)) {
-      .flex-#{$size}-#{$current-direction} {
-        justify-content: $current-direction;
+@mixin make-justify($size: map-get($breakpoints, xl)) {
+  @each $current-justify in $flexJustifies {
+    @if (map-has-key($breakpoints, $size)) {
+      .flex-#{$size}-#{$current-justify} {
+        justify-content: $current-justify;
       }
     }
 
-    .flex-#{$current-direction} {
-      justify-content: $current-direction;
+    .flex-#{$current-justify} {
+      justify-content: $current-justify;
     }
   }
 }

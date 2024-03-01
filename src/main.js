@@ -1,13 +1,7 @@
 import "@style/main.scss";
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
-
-  spaceBetween: 10,
-
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+// scripts
+import '@script/slider.js'
+import '@script/faq.js'
+import '@script/expander.js'
+import '@script/operationUnitsSlider.js'

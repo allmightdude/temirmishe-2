@@ -9,7 +9,7 @@
 html {
   font-size: 62.5%; //1rem = 10px
 
-  @media only screen and (max-width: $bp-largest) {
+  @include max-width(sm) {
     font-size: 56.25%; // 1rem  = 8px
   }
 }
@@ -17,9 +17,6 @@ html {
 body {
   box-sizing: border-box;
   direction: rtl;
-
-  @media only screen and (max-width: $bp-largest) {
-  }
 }
 
 /**

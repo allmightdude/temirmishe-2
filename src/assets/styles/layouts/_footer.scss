@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  background-color: color("secondary" , "base");
+  background-color: color("secondary", "base");
   &__link {
     color: white;
   }
@@ -11,7 +11,7 @@
     font-size: 1.4rem;
     text-align: right;
 
-    @media only screen and (max-width: $bp-large) {
+    @include max-width(xl) {
       margin: 2rem 0;
     }
 
@@ -29,9 +29,10 @@
       margin-bottom: 3rem;
     }
   }
-}
-
-html,
-body {
-  transition: 1.5s all ease;
+  
+  &__to-top{
+    display: block;
+    color: white;
+    padding: 1rem 0;
+  }
 }

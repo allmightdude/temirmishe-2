@@ -24,7 +24,7 @@
     margin-top: -1rem;
     box-shadow: 0 0.4rem 0.6rem rgba(#000, 0.25);
 
-    @media only screen and (max-width: $bp-large) {
+    @include max-width(sm) {
       padding: 1rem 2rem;
     }
   }

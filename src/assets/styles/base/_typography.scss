@@ -8,14 +8,6 @@
   font-weight: light;
 }
 
-h4 {
-  font-weight: 700;
-  font-family: iranYekan;
-}
-
-html {
-}
-
 body {
   font-weight: 400;
   line-height: 2;
@@ -24,40 +16,143 @@ body {
   color: #222f3e;
 }
 
-.heading-1 {
-  font-size: 3.5rem;
+/**
+ * Font Weight
+ * *********************************/
+.weight-400 {
+  font-weight: 400 !important;
+}
 
-  @media only screen and (max-width: $bp-medium) {
-    font-size: 2.5rem;
-  }
+.weight-500 {
+  font-weight: 500 !important;
+}
+
+.weight-600 {
+  font-weight: 600 !important;
+}
+
+.weight-800 {
+  font-weight: 800 !important;
+}
+
+.weight-900 {
+  font-weight: 900 !important;
+}
+
+/**
+ * Heading
+ * *********************************/
+.heading-1 {
+  font-size: 4.8rem;
+  font-weight: 900;
 }
 
 .heading-2 {
-  font-size: 2.5rem;
-
-  @media only screen and (max-width: $bp-medium) {
-    font-size: 2rem;
-  }
+  font-size: 3.2rem;
+  font-weight: 900;
 }
 
 .heading-3 {
   font-size: 2rem;
+  font-weight: 900;
+}
 
-  @media only screen and (max-width: $bp-medium) {
-    font-size: 1.7rem;
+.heading-4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.heading-5 {
+  font-size: 1.6rem;
+}
+
+.heading-6 {
+  font-size: 1.4rem;
+}
+
+/**
+* Text
+* *********************************/
+.text {
+  line-height: 2;
+
+  &--pre-line {
+    white-space: pre-line;
   }
 }
 
-.heading-sub {
-  font-size: 1.5rem;
+.text-1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
 
-  @media only screen and (max-width: $bp-medium) {
+.text-2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.text-3 {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.text-4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.text-5 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.text-6 {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+/**
+* captions
+************************************/
+.caption-1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.caption-2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+/**
+ * List
+ * *********************************/
+.unorder-list,
+.order-list {
+  padding-right: 24px;
+  line-height: 1.8em;
+
+  @include max-width(xs) {
     font-size: 1.3rem;
   }
 }
 
-.heading-3 {
+.order-list {
+  list-style-type: decimal;
+
+  .order-list {
+    list-style-type: lower-roman;
+  }
 }
+
+.unorder-list {
+  list-style-type: circle;
+
+  .unorder-list {
+    list-style-type: disc;
+  }
+}
+
 
 [class*="-icon"] {
   width: 2rem;
@@ -65,24 +160,18 @@ body {
   fill: #f9ca24;
 }
 
-.bullet {
-  border-bottom: 1px solid #f1f2f6;
-}
-
-@include selection(color("white", "base"), color("primary", "lighten-1"));
-
-.text-center {
+.text-center{  
   text-align: center;
 }
 
-.text-left {
+.text-left{  
   text-align: left;
 }
 
-.text-right {
+.text-right{  
   text-align: right;
 }
 
-.text-justify {
+.text-justify{  
   text-align: justify;
 }

@@ -1,2 +1,31 @@
-@include clearfix;
+@include max-width(xl) {
+  @include make-flex(xl);
 
+  @include make-direction(xl);
+
+  @include make-justify(xl);
+}
+
+@include max-width(md) {
+  @include make-flex(md);
+
+  @include make-direction(md);
+
+  @include make-justify(md);
+}
+
+@include max-width(sm) {
+  @include make-flex(sm);
+
+  @include make-direction(sm);
+
+  @include make-justify(sm);
+}
+
+@include max-width(xs) {
+  @include make-flex(xs);
+
+  @include make-direction(xs);
+
+  @include make-justify(xs);
+}
