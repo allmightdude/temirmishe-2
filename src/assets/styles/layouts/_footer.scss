@@ -1,8 +1,14 @@
 .footer {
+  width: 100%;
   position: relative;
   background-color: color("secondary", "base");
+
   &__link {
     color: white;
+  }
+
+  &__logo {
+    width: 10rem;
   }
 
   &__section {
@@ -20,17 +26,7 @@
     }
   }
 
-  &__logo {
-    color: white;
-    align-self: start !important;
-    justify-self: flex-start;
-
-    .big-logo {
-      margin-bottom: 3rem;
-    }
-  }
-  
-  &__to-top{
+  &__to-top {
     display: block;
     color: white;
     padding: 1rem 0;
