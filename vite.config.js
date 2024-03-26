@@ -4,7 +4,6 @@ import path from "path";
 
 export default defineConfig({
   root: "src",
-  base: "/src",
   publicDir: "src/public",
 
   server: {
